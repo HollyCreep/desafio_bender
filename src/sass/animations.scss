@@ -1,0 +1,42 @@
+
+@keyframes topEyelid {
+    0% {
+      transform: translateY(0);
+    }
+    20% { 
+      transform: translateY(50px);
+    }
+    80% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+  }
+  
+  @keyframes bottomEyelid {
+    0% {
+      transform: translateY(0px);
+    }
+    20% { 
+      transform: translateY(-50px);
+    }
+    80% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes bounce-in {
+    0% {
+      transform: scaleY(0);
+    }
+    50% {
+      transform: scaleY(1.5);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }

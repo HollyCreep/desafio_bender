@@ -1,0 +1,27 @@
+@import '../animations.scss';
+
+.bounce-enter-active {
+    animation: bounce-in .5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in .5s reverse;
+  }
+
+  .triste::before {
+    content: '';
+    position: absolute;
+    width: 145px;
+    height: 50px;
+    top: -50px;
+    background: black;
+    animation:  5s ease-in-out 1s forwards topEyelid;
+  }
+  .triste::after {
+    content: '';
+    position: absolute;
+    width: 145px;
+    height: 50px;
+    bottom: -50px;
+    background: black;
+    animation:  5s ease-in-out 1s forwards bottomEyelid;
+  }
