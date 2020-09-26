@@ -1,13 +1,4 @@
-@import '../animations.scss';
-
-.bounce-enter-active {
-    animation: bounce-in .5s;
-  }
-  .bounce-leave-active {
-    animation: bounce-in .5s reverse;
-  }
-
-  .triste::before {
+.eye_state_triste::before {
     content: '';
     position: absolute;
     width: 145px;
@@ -16,12 +7,16 @@
     background: black;
     animation:  5s ease-in-out 1s forwards topEyelid;
   }
-  .triste::after {
+  .eye_state_triste::after {
     content: '';
     position: absolute;
     width: 145px;
     height: 50px;
     bottom: -50px;
     background: black;
-    animation:  5s ease-in-out 1s forwards bottomEyelid;
+    // animation:  5s ease-in-out 1s forwards bottomEyelid;
+  }
+
+  .pupils_state_triste {
+    animation:  5s linear 2s forwards pupils__move_down;
   }

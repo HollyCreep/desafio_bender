@@ -9,7 +9,7 @@ export default new Vuex.Store({
     notification: {},
     bender: {
       is_speaking: false,
-      humor: 'triste',
+      humor: 'normal',
     },
   },
   mutations: {
@@ -30,14 +30,7 @@ export default new Vuex.Store({
       state.bender.is_speaking = payload
     },
     SET_HUMOR (state, payload) {
-      payload.snackbar = true
-      if (!payload.timeout) {
-        payload.timeout = 2000
-      }
-      if (!payload.color) {
-        payload.color = 'success'
-      }
-      state.notification = payload
+      state.bender.humor = payload
     },
   },
   actions: {

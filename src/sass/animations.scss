@@ -40,3 +40,30 @@
       transform: scaleY(1);
     }
   }
+
+  @keyframes pupils__move_down {
+    0% {
+      transform: translateY(0px);
+    }
+    20% { 
+      transform: translateY(10px);
+    }
+    70% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+  }
+
+  @keyframes pupils__move_center {
+    0% {
+      transform: translateY(0px);
+    }
+    50% { 
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
