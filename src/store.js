@@ -9,7 +9,7 @@ export default new Vuex.Store({
     notification: {},
     bender: {
       is_speaking: false,
-      humor: 'normal',
+      humor: 'indiferente',
     },
   },
   mutations: {

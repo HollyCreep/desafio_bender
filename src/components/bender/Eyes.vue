@@ -3,7 +3,7 @@
     <div class="Bender__socket">
       <div
         class="Bender__eye"
-        :class="`eye_state${humor}`"
+        :class="`eye_state_${humor}`"
       >
         <div
           class="Bender__pupil"
@@ -12,7 +12,7 @@
       </div>
       <div
         class="Bender__eye"
-        :class="`eye_state${humor}`"
+        :class="`eye_state_${humor}`"
       >
         <div
           class="Bender__pupil"
@@ -25,8 +25,6 @@
 
 <script>
   import { mapState } from 'vuex'
-  import traceMouseMoviment from '@/plugins/trace-mouse-move'
-  document.querySelector('body').addEventListener('mousemove', traceMouseMoviment)
   export default {
     name: 'BenderEyes',
     components: {

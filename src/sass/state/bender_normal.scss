@@ -1,3 +1,10 @@
-.pupils_state_normal {
-    animation:  5s ease 20s forwards pupils__move_center;
+.eye_state_normal::before {
+    animation:  5s ease-in-out  forwards close__topEyelid;
   }
+  .eye_state_triste::after {
+    // animation:  5s ease-in-out 1s forwards bottomEyelid;
+  }
+
+.pupils_state_normal {
+    animation:  1s ease-in-out  forwards pupils__move_center;
+}

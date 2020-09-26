@@ -1,0 +1,9 @@
+.eye_state_indiferente::before {
+    animation:  5s ease-in-out 1s infinite toogle__topEyelid;
+  }
+.eye_state_indiferente::after {
+    animation:  5s ease-in-out 1s infinite toogle_bottomEyelid;
+}
+.pupils_state_indiferente {
+  // animation:  1.5s linear 1.2s alternate forwards pupils__move_down;
+}

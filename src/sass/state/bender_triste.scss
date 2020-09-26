@@ -1,22 +1,9 @@
 .eye_state_triste::before {
-    content: '';
-    position: absolute;
-    width: 145px;
-    height: 50px;
-    top: -50px;
-    background: black;
-    animation:  5s ease-in-out 1s forwards topEyelid;
+    animation:  2s linear 1s forwards open__topEyelid;
   }
   .eye_state_triste::after {
-    content: '';
-    position: absolute;
-    width: 145px;
-    height: 50px;
-    bottom: -50px;
-    background: black;
     // animation:  5s ease-in-out 1s forwards bottomEyelid;
   }
-
   .pupils_state_triste {
-    animation:  5s linear 2s forwards pupils__move_down;
+    animation:  1.5s linear 1.2s  forwards pupils__move_down;
   }
