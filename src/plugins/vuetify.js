@@ -5,8 +5,8 @@ import '@/sass/main.scss'
 Vue.use(Vuetify)
 
 const theme = {
-  primary: '#323469',
-  secondary: '#ff9b23',
+  primary: '#a6b4c4',
+  secondary: '#e6df8e',
   input: '#7a7b9e',
   info: '#00CAE3',
   confirm: '#00C853',

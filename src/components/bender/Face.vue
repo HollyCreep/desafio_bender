@@ -3,7 +3,7 @@
     class="Bender"
     :class="`face_state_${humor}`"
   >
-    <!-- <hit-box /> -->
+    <happiness-meter />
     <bender-eyes />
     <bender-mouth />
   </div>
@@ -14,7 +14,7 @@
   export default {
     name: 'Bender',
     components: {
-      // HitBox: () => import('@/components/HitBox'),
+      HappinessMeter: () => import('@/components/core/HappinessMeter'),
     },
     data () {
       return {

@@ -12,12 +12,11 @@ body {
     align-items: center;
     flex-direction: column;
     background: #a6b4c4;
-    transition: background-color 5s linear;
   }
   @import 'bender_face.scss';
   @import 'bender_eye.scss';
   @import 'bender_mouth.scss' ;
-
+  @import 'happiness_meter.scss';
   @import '../state/bender_humor.scss'
   
   

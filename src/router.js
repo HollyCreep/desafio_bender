@@ -32,6 +32,7 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
   store.commit('SET_BENDER_HUMOR', to.name)
+  store.commit('SET_NELSON_SHOWING', false)
   next()
 })
 export default router

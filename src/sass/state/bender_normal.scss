@@ -18,3 +18,9 @@
   background-size: 300% 300%;
   animation: fundo__triste 10s ease forwards;
 }
+
+.happiness_meter_state_normal {
+  background:  linear-gradient(90deg, rgb(36, 218, 36), #5eee3a,#ecf845 30% ) no-repeat;
+  background-size: 300% 300%;
+  animation: happiness__meter 3s ease-in-out forwards;
+}

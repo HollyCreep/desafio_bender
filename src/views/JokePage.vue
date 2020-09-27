@@ -1,6 +1,7 @@
 <template>
   <div @click="nextPage('alegre')">
     <bender-face />
+    <joke-dialog />
   </div>
 </template>
 
@@ -8,7 +9,11 @@
   import { mapActions } from 'vuex'
   export default {
     name: 'Alegre',
+    components: {
+      JokeDialog: () => import('@/components/core/JokeDialog'),
+    },
     mounted () {
+      window.addEventListener('unload', this.teste)
       this.addJoke()
     },
     methods: {
@@ -16,6 +21,9 @@
         addJoke: 'setCurrentJoke',
         nextPage: 'changeCurrentPage',
       }),
+      teste () {
+        alert('vc esta dando reload fdp')
+      },
 
     },
   }

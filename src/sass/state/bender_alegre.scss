@@ -1,0 +1,27 @@
+.eye_state_alegre::before {
+    animation:  2s linear forwards open__topEyelid;
+  }
+  .eye_state_triste::after {
+    // animation:  5s ease-in-out 1s forwards bottomEyelid;
+  }
+  .pupils_state_triste {
+    animation:  1.5s linear  forwards pupils__move_down;
+  }
+
+  .mouth_state_alegre {
+      transition: height 1s 0.5s;
+      animation: 8s linear  forwards mouth__smiling;
+  }
+
+  .face_state_alegre {
+    background:  linear-gradient(90deg, #263238,#455A64, #455A64, #a6b4c4) no-repeat;
+    background-size: 300% 300%;
+    animation: fundo__triste 5s 1s ease-in-out forwards;
+  }
+
+  .happiness_meter_state_alegre {
+    background:  linear-gradient(90deg, rgb(129, 16, 16) ,red,#ecf845 ,rgb(36, 218, 36), #5eee3a) no-repeat;
+    background-size: 300% 300%;
+    animation: happiness__meter 10s ease-in-out forwards;
+  }
+  

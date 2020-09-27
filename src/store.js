@@ -12,6 +12,7 @@ export default new Vuex.Store({
     allJokes: [],
     bender: {
       is_speaking: false,
+      show_nelson: false,
       humor: 'normal',
     },
     systemInfo: {
@@ -35,6 +36,9 @@ export default new Vuex.Store({
     SET_SPEAKING (state, payload) {
       state.bender.is_speaking = payload
     },
+    SET_NELSON_SHOWING (state, payload) {
+      state.bender.show_nelson = payload
+    },
     SET_BENDER_HUMOR (state, payload) {
       state.bender.humor = payload
     },
@@ -47,16 +51,21 @@ export default new Vuex.Store({
     },
     SET_CURRENT_JOKE (state, payload) {
       state.currentJoke = payload
-      state.allJokes.push(payload)
-      var speaker = new SpeechSynthesisUtterance()
-      speaker.addEventListener('end', function (event) {
-        state.bender.is_speaking = false
-      })
-      speaker.lang = 'en-US'
-      speaker.text = payload
-      state.bender.is_speaking = true
-      window.speechSynthesis.speak(speaker)
-    },
+      if (payload) {
+        state.allJokes.push(payload)
+        var speaker = new SpeechSynthesisUtterance()
+        speaker.addEventListener('start', function (event) {
+          state.bender.is_speaking = true
+        })
+        speaker.addEventListener('end', function (event) {
+          state.bender.is_speaking = false
+          state.bender.show_nelson = true
+        })
+        speaker.lang = 'en-US'
+        speaker.text = payload
+        window.speechSynthesis.speak(speaker)
+      }
+      },
   },
   actions: {
       changeCurrentPage (state, payload) {
@@ -82,6 +91,7 @@ export default new Vuex.Store({
   getters: {
     getBenderHumor: state => state.bender.humor,
     getBenderIsSpeaking: state => state.bender.is_speaking,
+    isNelsonShowing: state => state.bender.show_nelson,
     getCurrentJoke: state => state.currentJoke,
     getCurrentPage: state => state.systemInfo.currentPage,
     isLoading: state => state.loading,

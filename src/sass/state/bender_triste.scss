@@ -14,8 +14,12 @@
   }
 
   .face_state_triste {
-    background:  linear-gradient(90deg, #a6b4c4, #59798e, #23a6d5) no-repeat;
+    background:  linear-gradient(90deg, #a6b4c4, #4b5053,#455A64, #263238, ) no-repeat;
     background-size: 300% 300%;
     animation: fundo__triste 5s ease-in-out forwards;
   }
-  
+  .happiness_meter_state_triste {
+    background:  linear-gradient(90deg, #ecf845 30% ,rgb(129, 16, 16),red) no-repeat;
+    background-size: 300% 300%;
+    animation: happiness__meter 5s ease-in-out  forwards;
+  }
