@@ -1,16 +1,16 @@
 .eye_state_normal::before {
     animation:  5s ease-in-out  forwards close__topEyelid;
-    animation:  5s ease-in-out 4s infinite toogle__topEyelid;
+    animation:  5s ease-in-out 2s infinite toogle__topEyelid;
 }
 .eye_state_normal::after {
-  animation:  5s ease-in-out 4s infinite toogle_bottomEyelid;
+  animation:  5s ease-in-out 2s infinite toogle_bottomEyelid;
 }
 .pupils_state_normal {
     animation:  1s ease-in-out  forwards pupils__move_center;
 }
-.mouth_state_triste {
+.mouth_state_normal {
   transition: height 1s 0.5s;
-  animation: 2s linear 1s forwards mouth__opening;
+  animation: 3s ease-in-out  forwards mouth__opening;
 }
 
 .face_state_normal {

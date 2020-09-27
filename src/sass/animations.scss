@@ -92,7 +92,7 @@
   // BOCA
   @keyframes mouth__closing {
     0% {
-     height: 100px;
+     height: 50px;
     }
     50% {
       height: 50px;
@@ -103,13 +103,13 @@
   }
   @keyframes mouth__opening {
     0% {
-     height: 10px;
+     height: 100px;
     }
     50% {
       height: 50px;
     }
     100% {
-      height: 100px;
+      height: 50px;
     }
   }
   @keyframes mouth__smiling { 

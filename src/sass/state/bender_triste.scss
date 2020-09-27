@@ -10,7 +10,7 @@
 
   .mouth_state_triste {
       transition: height 1s 0.5s;
-      animation: 2s linear 1s forwards mouth__closing;
+      animation:  4s ease-in-out  forwards mouth__closing;
   }
 
   .face_state_triste {
