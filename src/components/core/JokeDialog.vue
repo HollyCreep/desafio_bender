@@ -3,6 +3,7 @@
     <v-bottom-sheet
       v-model="speaking"
       persistent
+      hide-overlay
     >
       <v-sheet
         class="d-flex justify-center align-center"

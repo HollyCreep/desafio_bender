@@ -12,7 +12,6 @@
       ...mapActions({
         nextPage: 'changeCurrentPage',
       }),
-
     },
   }
 </script>

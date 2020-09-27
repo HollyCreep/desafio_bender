@@ -5,17 +5,11 @@
 </template>
 
 <script>
-  import { mapActions, mapGetters } from 'vuex'
+  import { mapActions } from 'vuex'
   export default {
     name: 'Normal',
-    computed: {
-      ...mapGetters({ joke: 'getCurrentJoke' }),
-    },
     methods: {
-      ...mapActions({
-        addJoke: 'setCurrentJoke',
-        nextPage: 'changeCurrentPage',
-      }),
+      ...mapActions({ nextPage: 'changeCurrentPage' }),
 
     },
   }

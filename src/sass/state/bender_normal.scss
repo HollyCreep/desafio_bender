@@ -1,10 +1,20 @@
 .eye_state_normal::before {
     animation:  5s ease-in-out  forwards close__topEyelid;
-  }
-  .eye_state_triste::after {
-    // animation:  5s ease-in-out 1s forwards bottomEyelid;
-  }
-
+    animation:  5s ease-in-out 4s infinite toogle__topEyelid;
+}
+.eye_state_normal::after {
+  animation:  5s ease-in-out 4s infinite toogle_bottomEyelid;
+}
 .pupils_state_normal {
     animation:  1s ease-in-out  forwards pupils__move_center;
+}
+.mouth_state_triste {
+  transition: height 1s 0.5s;
+  animation: 2s linear 1s forwards mouth__opening;
+}
+
+.face_state_normal {
+  background-image:  radial-gradient( #a6b4c4, #59798e );
+  background-size: 300% 300%;
+  animation: fundo__triste 10s ease forwards;
 }

@@ -1,0 +1,37 @@
+.Bender__mouth {
+  width: 275px;
+  height: 100px;
+  background: #fefbb8;
+  margin-top: 80px;
+  border-radius: 50px;
+  border: 4px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  position: relative;
+}
+
+.Bender__tooth {
+  height: 100px;
+  width: 4px;
+  background: black;
+}
+
+.Bender__lip {
+  position: absolute;
+  width: 275px;
+  height: 4px;
+  background: black;
+  top: calc(33% - 2px);
+}
+
+.Bender__lip:last-of-type {
+  top: calc(66% - 2px);
+}
+/*# sourceMappingURL=bender_mouth.css.map */

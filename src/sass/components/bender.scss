@@ -12,11 +12,7 @@ body {
     align-items: center;
     flex-direction: column;
     background: #a6b4c4;
-    background-image:
-      radial-gradient(
-        #a6b4c4,
-        #59798e
-      );
+    transition: background-color 5s linear;
   }
   @import 'bender_face.scss';
   @import 'bender_eye.scss';

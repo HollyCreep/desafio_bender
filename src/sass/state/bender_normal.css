@@ -1,0 +1,31 @@
+.eye_state_normal::before {
+  -webkit-animation: 5s ease-in-out  forwards close__topEyelid;
+          animation: 5s ease-in-out  forwards close__topEyelid;
+  -webkit-animation: 5s ease-in-out 4s infinite toogle__topEyelid;
+          animation: 5s ease-in-out 4s infinite toogle__topEyelid;
+}
+
+.eye_state_normal::after {
+  -webkit-animation: 5s ease-in-out 4s infinite toogle_bottomEyelid;
+          animation: 5s ease-in-out 4s infinite toogle_bottomEyelid;
+}
+
+.pupils_state_normal {
+  -webkit-animation: 1s ease-in-out  forwards pupils__move_center;
+          animation: 1s ease-in-out  forwards pupils__move_center;
+}
+
+.mouth_state_triste {
+  -webkit-transition: height 1s 0.5s;
+  transition: height 1s 0.5s;
+  -webkit-animation: 2s linear 1s forwards mouth__opening;
+          animation: 2s linear 1s forwards mouth__opening;
+}
+
+.face_state_normal {
+  background-image: radial-gradient(#a6b4c4, #59798e);
+  background-size: 300% 300%;
+  -webkit-animation: fundo__triste 10s ease forwards;
+          animation: fundo__triste 10s ease forwards;
+}
+/*# sourceMappingURL=bender_normal.css.map */

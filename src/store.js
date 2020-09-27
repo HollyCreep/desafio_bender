@@ -60,16 +60,18 @@ export default new Vuex.Store({
   },
   actions: {
       changeCurrentPage (state, payload) {
-       const states = {
-          home: 'triste',
-          triste: 'alegre',
-          alegre: 'normal',
+        if (!state.state.bender.is_speaking) {
+          const states = {
+             home: 'triste',
+             triste: 'alegre',
+             alegre: 'normal',
+           }
+             const destino = states[payload]
+             state.commit('SET_BENDER_HUMOR', destino)
+             if (destino !== state.state.systemInfo.currentPage) {
+                state.commit('SET_NEXT_PAGE', destino)
+             }
         }
-          const destino = states[payload]
-          state.commit('SET_BENDER_HUMOR', destino)
-          if (destino !== state.state.systemInfo.currentPage) {
-             state.commit('SET_NEXT_PAGE', destino)
-          }
       },
       async setCurrentJoke (state, payload) {
         const joke = await fetch('https://geek-jokes.sameerkumar.website/api?format=json', { Accept: 'application/json' })
@@ -82,6 +84,7 @@ export default new Vuex.Store({
     getBenderIsSpeaking: state => state.bender.is_speaking,
     getCurrentJoke: state => state.currentJoke,
     getCurrentPage: state => state.systemInfo.currentPage,
+    isLoading: state => state.loading,
   },
 
 })

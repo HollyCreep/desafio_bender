@@ -1,5 +1,8 @@
 <template>
-  <div class="Bender">
+  <div
+    class="Bender"
+    :class="`face_state_${humor}`"
+  >
     <!-- <hit-box /> -->
     <bender-eyes />
     <bender-mouth />
@@ -7,7 +10,7 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+  import { mapGetters } from 'vuex'
   export default {
     name: 'Bender',
     components: {
@@ -19,15 +22,7 @@
       }
     },
     computed: {
-      ...mapState(['loading']),
-      loading: {
-        get () {
-          return this.$store.state.loading
-        },
-        set (val) {
-          this.$store.commit('SET_LOADING', val)
-        },
-      },
+      ...mapGetters({ humor: 'getBenderHumor', speaking: 'getBenderIsSpeaking', loading: 'isLoading' }),
     },
   }
 </script>

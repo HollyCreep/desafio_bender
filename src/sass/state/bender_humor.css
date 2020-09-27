@@ -1,0 +1,45 @@
+.eye_state_normal::before {
+  -webkit-animation: 5s ease-in-out  forwards close__topEyelid;
+          animation: 5s ease-in-out  forwards close__topEyelid;
+  -webkit-animation: 5s ease-in-out 4s infinite toogle__topEyelid;
+          animation: 5s ease-in-out 4s infinite toogle__topEyelid;
+}
+
+.eye_state_normal::after {
+  -webkit-animation: 5s ease-in-out 4s infinite toogle_bottomEyelid;
+          animation: 5s ease-in-out 4s infinite toogle_bottomEyelid;
+}
+
+.pupils_state_normal {
+  -webkit-animation: 1s ease-in-out  forwards pupils__move_center;
+          animation: 1s ease-in-out  forwards pupils__move_center;
+}
+
+.mouth_state_triste {
+  -webkit-transition: height 1s 0.5s;
+  transition: height 1s 0.5s;
+  -webkit-animation: 2s linear 1s forwards mouth__opening;
+          animation: 2s linear 1s forwards mouth__opening;
+}
+
+.face_state_normal {
+  background-image: radial-gradient(#c4a6b9, #8e8b59);
+}
+
+.eye_state_triste::before {
+  -webkit-animation: 2s linear forwards open__topEyelid;
+          animation: 2s linear forwards open__topEyelid;
+}
+
+.pupils_state_triste {
+  -webkit-animation: 1.5s linear  forwards pupils__move_down;
+          animation: 1.5s linear  forwards pupils__move_down;
+}
+
+.mouth_state_triste {
+  -webkit-transition: height 1s 0.5s;
+  transition: height 1s 0.5s;
+  -webkit-animation: 2s linear 1s forwards mouth__closing;
+          animation: 2s linear 1s forwards mouth__closing;
+}
+/*# sourceMappingURL=bender_humor.css.map */
