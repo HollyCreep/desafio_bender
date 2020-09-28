@@ -8,6 +8,7 @@ describe('App', () => {
                 msg: 'Hello world',
             },
         })
-        expect(wrapper.isVueInstance()).toBeTruthy()
+        // expect(wrapper.isVueInstance()).toBeTruthy()
+        expect(wrapper.exists()).toBe(true)
     })
 })

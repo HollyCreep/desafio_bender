@@ -24,21 +24,13 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex'
+  import { mapGetters } from 'vuex'
   export default {
     name: 'BenderEyes',
     components: {
     },
     computed: {
-      ...mapState(['bender.humor']),
-      humor: {
-        get () {
-          return this.$store.state.bender.humor
-        },
-        set (val) {
-          this.$store.commit('SET_SPEAKING', val)
-        },
-      },
+      ...mapGetters({ humor: 'getBenderHumor' }),
     },
   }
 </script>
