@@ -1,0 +1,25 @@
+.balao{
+    margin: 0 auto; 
+    background: #1E88E5;
+    font-family: 'open sans';
+    font-size: 0.85em;
+    line-height: 1.6em;  
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+}
+.balao:after{ 
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #1E88E5;
+    top: -20px; 
+    left: 20%;
+}
