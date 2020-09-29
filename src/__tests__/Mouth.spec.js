@@ -1,10 +1,10 @@
 import { shallowMount } from '@vue/test-utils'
-import BenderEye from '@/components/bender/Eyes'
+import BenderMouth from '@/components/bender/Mouth'
 
-describe('BenderEye', () => {
-    test('Verifica se o BenderEye é uma instância do Vue', () => {
+describe('BenderMouth', () => {
+    test('Verifica se o MOUTH é uma instância do Vue', () => {
         expect.assertions(1)
-        const wrapper = shallowMount(BenderEye, {
+        const wrapper = shallowMount(BenderMouth, {
             mocks: {
                 $t: t => t,
                 $store: {
@@ -19,7 +19,7 @@ describe('BenderEye', () => {
 
     test('Verifica humor normal', () => {
         expect.assertions(2)
-        const wrapper = shallowMount(BenderEye, {
+        const wrapper = shallowMount(BenderMouth, {
             mocks: {
                 $t: t => t,
                 $store: {
@@ -35,7 +35,7 @@ describe('BenderEye', () => {
 
     test('Verifica humor triste', () => {
         expect.assertions(2)
-        const wrapper = shallowMount(BenderEye, {
+        const wrapper = shallowMount(BenderMouth, {
             mocks: {
                 $t: t => t,
                 $store: {
@@ -51,7 +51,7 @@ describe('BenderEye', () => {
 
     test('Verifica humor alegre', () => {
         expect.assertions(2)
-        const wrapper = shallowMount(BenderEye, {
+        const wrapper = shallowMount(BenderMouth, {
             mocks: {
                 $t: t => t,
                 $store: {

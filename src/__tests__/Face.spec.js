@@ -1,10 +1,17 @@
-import { shallowMount } from '@vue/test-utils'
-import BenderEye from '@/components/bender/Eyes'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
+import BenderFace from '@/components/bender/Face'
+import BenderEyes from '@/components/bender/Eyes'
+import BenderMouth from '@/components/bender/Mouth'
 
-describe('BenderEye', () => {
-    test('Verifica se o BenderEye é uma instância do Vue', () => {
+const localVue = createLocalVue()
+localVue.use(BenderEyes)
+localVue.use(BenderMouth)
+
+describe('BenderFace', () => {
+    test('Verifica se o Face é uma instância do Vue', () => {
         expect.assertions(1)
-        const wrapper = shallowMount(BenderEye, {
+        const wrapper = shallowMount(BenderFace, {
+            localVue,
             mocks: {
                 $t: t => t,
                 $store: {
@@ -19,7 +26,8 @@ describe('BenderEye', () => {
 
     test('Verifica humor normal', () => {
         expect.assertions(2)
-        const wrapper = shallowMount(BenderEye, {
+        const wrapper = shallowMount(BenderFace, {
+            localVue,
             mocks: {
                 $t: t => t,
                 $store: {
@@ -35,7 +43,8 @@ describe('BenderEye', () => {
 
     test('Verifica humor triste', () => {
         expect.assertions(2)
-        const wrapper = shallowMount(BenderEye, {
+        const wrapper = shallowMount(BenderFace, {
+            localVue,
             mocks: {
                 $t: t => t,
                 $store: {
@@ -51,7 +60,8 @@ describe('BenderEye', () => {
 
     test('Verifica humor alegre', () => {
         expect.assertions(2)
-        const wrapper = shallowMount(BenderEye, {
+        const wrapper = shallowMount(BenderFace, {
+            localVue,
             mocks: {
                 $t: t => t,
                 $store: {

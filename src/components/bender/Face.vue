@@ -22,7 +22,7 @@
       }
     },
     computed: {
-      ...mapGetters({ humor: 'getBenderHumor', speaking: 'getBenderIsSpeaking', loading: 'isLoading' }),
+      ...mapGetters({ humor: 'getBenderHumor' }),
     },
   }
 </script>

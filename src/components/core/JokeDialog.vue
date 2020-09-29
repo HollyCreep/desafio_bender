@@ -18,7 +18,7 @@
             src="@/assets/imagens/nelson.png"
           />
         </v-expand-transition>
-        <div class="pa-3 flex-grow-1 text-center text-sm-h4 text-subtitle-2">
+        <div class="pa-3 flex-grow-1 text-center text-sm-h5 text-subtitle-2">
           {{ joke }}
         </div>
         <v-btn
